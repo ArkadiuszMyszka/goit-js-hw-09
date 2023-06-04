@@ -4,6 +4,7 @@ import Notiflix from 'notiflix';
 const startBtn = document.querySelector('button[data-start]');
 const clockFields = document.querySelectorAll('span.value');
 startBtn.disabled = true;
+let intervalTimeId = null;
 
 //-----------------start default calendar 
 const calendar = flatpickr('input#datetime-picker', {
